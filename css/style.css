@@ -80,12 +80,23 @@ html {
     color: #FF6712
 }
 
+.show {
+    background-color: #000000ef;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+#nav-list {
+    display: flex;
+    align-items: center;
+}
+
 #nav-list li ul li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
     font-size: 20px;
-    margin: 35px;
+    margin: 0px;
 }
 
 #nav-list li ul li a:hover {
@@ -112,6 +123,7 @@ header .container-header {
 -----------------------*/
 #carousel-b {
     margin-bottom: 150px;
+    z-index: -1;
 }
 
 
@@ -163,6 +175,7 @@ header .container-header {
     border-radius: 20px;
     transition: all 0.4s;
     box-shadow: 0px 10px 21px 10px #00000021;
+    margin-bottom: 100px;
 }
 
 #brands:hover {
