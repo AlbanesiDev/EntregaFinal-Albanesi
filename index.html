@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Meta -->
     <meta charset="UTF-8">
@@ -7,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title -->
-    <title>PreEntrega1 Albanesi</title>
+    <title>PreEntrega2 Albanesi</title>
 
     <!-- Favicon -->
     <link rel="icon" href="https://live.staticflickr.com/65535/52421384343_285e103ebc_w.jpg">
@@ -18,108 +19,172 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap"
+        rel="stylesheet">
 
     <!-- CDN Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 
 <body>
     <!-- Start Header -->
-    <header class="header">
-
-        <!-- Header Top -->
+    <header id="header">
         <div class="header-top">
             <p>6 CUOTAS SIN INTERÉS</p>
         </div>
 
-        <div class="container">
-            <!-- Logo Header -->
-            <img src="https://live.staticflickr.com/65535/52421630119_1f723abf62_o.png" alt="Logo_BeFaster">
+        <nav id="navbar-n" class="navbar navbar-expand-lg header-color">
+            <div class="container-fluid">
 
-            <!-- Nav -->
-            <nav class="nav">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Hombre</a></li>
-                    <li><a href="#">Mujer</a></li>
-                    <li><a href="#">Marcas</a></li>
-                    <li><a href="#">Sale</a></li>
-                </ul>
-            </nav>
-        </div>
+                <div id="header-logo">
+                    <a href="index.html">
+                        <img src="https://live.staticflickr.com/65535/52421630119_1f723abf62_o.png" alt="Logo_BeFaster">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul id="nav-list" class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hombre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mujer</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Marcas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Nike</a></li>
+                                <li><a class="dropdown-item" href="#">Adidas</a></li>
+                                <li><a class="dropdown-item" href="#">Puma</a></li>
+                                <li><a class="dropdown-item" href="#">NewBalance</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sale</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
     </header>
     <!-- End Header -->
 
-    <!-- Start Main -->
-    <main class="main">
+    <!-- Start carousel-->
+    <section id="carousel-b">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true" data-bs-touch="true">
 
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
+              <div class="carousel-item active">
+                <img src="/images/AirForceBrown1.png" class="d-block w-100" alt="banner-1">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/AirForceRandom.png" class="d-block w-100" alt="banner-2">
+              </div>
+              <div class="carousel-item">
+                <img src="/images/AirForceWhite.png" class="d-block w-100" alt="banner-3">
+              </div>
             </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
         </div>
+    </section>
+    <!-- End carousel -->
 
-        <section>
-            <img src="https://live.staticflickr.com/65535/52421868275_97ee38ed41_o.png" alt="Banner">
-        </section>
 
-        <section class="products">
-            <article class="article-1">
-                <img src="https://live.staticflickr.com/65535/52421758229_8ba7179e8b_o.jpg" alt="productor">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi minima ducimus iusto dolorem illo dolor, molestias reiciendis perferendis culpa fugiat nemo porro. Molestiae explicabo quisquam libero vero perferendis cupiditate necessitatibus.</p>
-            </article>
+    <!-- Cards starts -->
+    <section id="section-cards">
+        <div class="container">
+            <div class="row g-3">
 
-            <article class="article-2">
-                <img src="https://live.staticflickr.com/65535/52421921170_918357105a_o.jpg" alt="productor">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laudantium dolores cum tenetur perspiciatis omnis ut molestiae mollitia voluptatum eaque? Modi quaerat excepturi magni autem aliquam quibusdam maxime omnis inventore!</p>
-            </article>
+                <article class="col-12 col-md-6 col-lg-4 align-i">
+                    <div id="card-1" class="card" style="width: 20rem;">
+                        <img src="/images/image-card-1.jpg" class="card-img-top" alt="image-card-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea
+                                asperiores natus quibusdam sint mollitia corrupti, vel rerum.</p>
+                            <a href="#" class="btn btn-dark">Ver</a>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="article-1">
-                <img src="https://live.staticflickr.com/65535/52421987383_078b69846d_o.jpg" alt="productor">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit repellendus, ducimus qui optio adipisci deleniti magnam officia velit alias maxime aliquid voluptates facilis id? Recusandae omnis provident a blanditiis nobis?</p>
-            </article>
-        </section>
-    </main>
-    <!-- End Main -->
+                <article class="col-12 col-md-6 col-lg-4 align-i">
+                    <div id="card-2" class="card" style="width: 20rem;">
+                        <img src="/images/image-card-2.jpg" class="card-img-top" alt="image-card-2">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea
+                                asperiores natus quibusdam sint mollitia corrupti, vel rerum.</p>
+                            <a href="#" class="btn btn-dark">Ver</a>
+                        </div>
+                    </div>
+                </article>
 
-    <!-- Start Footer -->
-    <footer>
-        <div class="footer-nav">
-            <ul>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Panel de ayuda</a></li>
-                <li><a href="">Contacto</a></li>
-                <li><a href="">Envios</a></li>
-            </ul>
-            
-          
-            <div class="footer-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249924.00284580438!2d-58.42219103192866!3d-34.61040446929306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1665501596307!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <article class="col-12 col-md-6 col-lg-4 align-i">
+                    <div id="card-3" class="card" style="width: 20rem;">
+                        <img src="/images/image-card-3.jpg" class="card-img-top" alt="image-card-3">
+                        <div class="card-body">
+                            <h5 class="card-title">Lorem ipsum</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ea
+                                asperiores natus quibusdam sint mollitia corrupti, vel rerum.</p>
+                            <a href="#" class="btn btn-dark">Ver</a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
-    </footer>
+    </section>
+    <!-- Cards End -->
+
+    <!-- Brands Slider Start -->
+    <section id="brands">
+        <div>
+
+        </div>
+    </section>
+    <!-- Brands Slider End -->
+
+
+
+    <!-- Start Footer -->
     <!-- End Footer-->
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
