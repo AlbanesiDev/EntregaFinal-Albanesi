@@ -1,0 +1,23 @@
+{
+  "name": "preentrega2-albanesi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbanesiDev/PreEntrega2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlbanesiDev/PreEntrega2/issues"
+  },
+  "homepage": "https://github.com/AlbanesiDev/PreEntrega2#readme",
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
