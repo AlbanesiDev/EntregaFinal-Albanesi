@@ -1,0 +1,13 @@
+.footer-h {
+    ul{
+        li{
+            a{
+                color: rgb(0, 0, 0);
+
+                &:hover{
+                    color: #FF6712;
+                }
+            }
+        }
+    }
+}
