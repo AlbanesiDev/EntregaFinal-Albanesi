@@ -34,47 +34,140 @@
 
 <body>
   <!-- Start Header -->
-  <header id="header" style="margin-bottom: 70px;">
+  <header>
     <div class="header-top content">
-      <p>6 CUOTAS SIN INTERÉS</p>
+        <p>6 CUOTAS SIN INTERÉS</p>
     </div>
 
-    <nav id="navbar" class="navbar navbar-expand-lg header-color sticky">
-      <div class="container-fluid">
+    <nav class="navbar py-4 navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://live.staticflickr.com/65535/52421630119_1f723abf62_o.png" alt="Logo_BeFaster"
+                    width="50" height="50" />
+            </a>
 
-        <div id="header-logo">
-          <a href="index.html">
-            <img src="https://live.staticflickr.com/65535/52421630119_1f723abf62_o.png" alt="Logo_BeFaster">
-          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-5 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Hombre
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Calzado</a></li>
+                                <li><a class="dropdown-item" href="#">zapatillas</a></li>
+                                <li><a class="dropdown-item" href="#">Ojotas</a></li>
+                                <li><a class="dropdown-item" href="#">Sandalias</a></li>
+                                <li><a class="dropdown-item" href="#">Botas</a></li>
+                            </ul>
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Indumentaria</a></li>
+                                <li><a class="dropdown-item" href="#">Remeras</a></li>
+                                <li><a class="dropdown-item" href="#">Musculosas</a></li>
+                                <li><a class="dropdown-item" href="#">Shorts</a></li>
+                                <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                                <li><a class="dropdown-item" href="#">Buzos</a></li>
+                                <li><a class="dropdown-item" href="#">Camperas</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Trajes de Baño</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Mujer
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Calzado</a></li>
+                                <li><a class="dropdown-item" href="#">zapatillas</a></li>
+                                <li><a class="dropdown-item" href="#">Ojotas</a></li>
+                                <li><a class="dropdown-item" href="#">Sandalias</a></li>
+                                <li><a class="dropdown-item" href="#">Botas</a></li>
+                            </ul>
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Indumentaria</a></li>
+                                <li><a class="dropdown-item" href="#">Remeras</a></li>
+                                <li><a class="dropdown-item" href="#">Musculosas</a></li>
+                                <li><a class="dropdown-item" href="#">Shorts</a></li>
+                                <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                                <li><a class="dropdown-item" href="#">Buzos</a></li>
+                                <li><a class="dropdown-item" href="#">Camperas</a></li>
+                                <li><a class="dropdown-item" href="#">Calzas</a></li>
+                                <li><a class="dropdown-item" href="#">Tops</a></li>
+                                <li><a class="dropdown-item" href="#">Polleras</a></li>
+                                <li><a class="dropdown-item" href="#">Vestidos</a></li>
+                            </ul>
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sale.html">Sale</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Search Icon -->
+            <div class="bg-search-bar">
+                <div class="bg-sb">
+                    <input type="text" placeholder="Search" />
+                    <div class="icon">
+                        <i class="bi bi-search"></i>
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Icon -->
+            <div class="bg-sb">
+                <div class="icon">
+                    <i class="bi bi-person"></i>
+                    <i class="bi bi-person-fill"></i>
+                </div>
+            </div>
+
+
+            <!-- Bag Icon -->
+            <div class="bg-sb">
+                <div class="icon">
+                    <i class="bi bi-bag"></i>
+                    <i class="bi bi-bag-fill"></i>
+                </div>
+            </div>
+
         </div>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul id="nav-list" class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="men.html">Hombre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="women.html">Mujer</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="shop.html">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sale.html">Sale</a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </nav>
-  </header>
+</header>
   <!-- End Header -->
 
   <!-- Start Main -->

@@ -4,7 +4,9 @@
 @import "components/footer";
 @import "components/banners";
 @import "components/payment";
-
+@import "components/icons-header";
+@import "components/faq";
+@import "components/outfits-cards";
 
 body {
   margin: 0;
@@ -14,6 +16,7 @@ body {
   overflow-x: hidden;
   font-family: "Kanit", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
