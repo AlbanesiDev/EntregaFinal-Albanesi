@@ -1,0 +1,30 @@
+#bg-carousel {
+    margin: 20px;
+    z-index: 1;
+    position: relative;
+    .carousel-item {
+        .bg-glass{
+            h2 {
+                width: 300px;
+                height: 300px;
+
+                background-color: rgba(0, 0, 0, 0.11);
+                backdrop-filter: blur(2px);
+
+                color: $color-enfasisPrincipal;
+
+                font-family: 'kanit-light';
+                font-size: 50px;
+
+                position: absolute;
+                bottom: 200px;
+                left: 200px;
+                
+                text-shadow: 0px 0px 20px rgba(255, 115, 0, 0.226);
+                span {
+                    font-family: 'kanit-semibold';
+                }
+            }
+        }
+    }
+}

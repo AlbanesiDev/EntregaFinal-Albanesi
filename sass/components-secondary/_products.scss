@@ -1,0 +1,19 @@
+.align-i {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: 20px solid white;
+    border-radius: 20px;
+    transition: all 0.4s;
+    box-shadow: 1px 11px 21px -1px #00000021;
+    margin-bottom: 100px;
+    img {
+        border-radius: 10px;
+    }
+    &:hover {
+        box-shadow: 1px 11px 21px -1px #0000008f;
+        transform: translateY(-3%);
+    }
+}
