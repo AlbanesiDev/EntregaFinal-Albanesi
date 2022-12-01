@@ -13,8 +13,9 @@
 @import "base/variables";
 /*-----------------------------*/
 
-/*-------------Base-------------*/
+/*-------------Secondary------------*/
 @import "components-secondary/shop";
+@import "components-secondary/faq";
 /*-----------------------------*/
 
 
@@ -31,29 +32,6 @@ html {
 }
 
 /*-----------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #notfound {
   img {
     width: 100%;
@@ -62,16 +40,6 @@ html {
   }
 }
 
-#bg-pag {
-  margin-top: 50px;
-  margin-bottom: 100px;
-  ul {
-    li {
-      a {
-        color: black;
-      }
-    }
-  }
-}
+
 
 

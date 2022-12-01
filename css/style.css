@@ -1,242 +1,266 @@
-header .header-top {
-  background-color: #ffffff;
+/*-------------Home-------------*/
+@font-face {
+  font-family: "kanit";
+  src: url(/fonts/kanit/Kanit-ExtraLight.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "kanit-light";
+  src: url(/fonts/kanit/Kanit-Light.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "kanit-semiBold";
+  src: url(/fonts/kanit/Kanit-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "khula";
+  src: url(/fonts/khula/Khula-ExtraBold.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "telex";
+  src: url(/fonts/telex/Telex-Regular.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "modern";
+  src: url(/fonts/modern/theModernChaos.ttf);
+}
+@font-face {
+  font-family: "grafitti";
+  src: url(/fonts/grafiti/SterousDemoRegular.ttf);
+}
+header #header-top {
+  margin-top: 3px;
   height: 35px;
   width: 100%;
+  background-color: white;
 }
-header .header-top p {
-  color: black;
-  font-family: "Kanit", sans-serif;
+header #header-top #header-top-text {
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  width: 100%;
+  margin: 0;
   font-size: 20px;
-  text-align: center;
-  margin: 5px;
+  font-family: "kanit-light";
+  margin: 0;
 }
 header .navbar-dark {
   background-color: black;
+  position: relative;
+}
+header .navbar-dark .navbar-brand {
+  margin: 0;
 }
 header .navbar-dark .navbar-brand img {
+  position: absolute;
+  bottom: 22px;
+  width: 50px;
   margin-left: 10px;
+}
+header .navbar-dark .dropdown-menu {
+  width: 100%;
+  background-color: black;
+  margin: 0;
+  border-radius: 0;
+  margin: 0;
+  border: solid 10px white;
+}
+header .navbar-dark .dropdown-menu h3 {
+  color: white;
+  font-family: "kanit";
+  font-size: 22px;
+  margin: 10px 0px 15px 0px;
+}
+header .navbar-dark .dropdown-menu .list-group {
+  display: inline-block;
+  --bs-list-group-bg: black;
+}
+header .navbar-dark .dropdown-menu .list-group a {
+  color: white;
+  font-family: "kanit";
+  font-size: 18px;
+  position: relative;
+}
+header .navbar-dark .dropdown-menu .list-group a:hover {
+  color: #ff6712;
+}
+header .navbar-dark .dropdown-menu .list-group a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  top: 40px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+header .navbar-dark .dropdown-menu .list-group a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 header .navbar-dark .navbar-nav .nav-link {
   margin: 0px 15px 0px 15px;
   color: white;
   text-decoration: none;
-  font-family: "Kanit", sans-serif;
+  font-family: "Kanit";
   font-size: 20px;
 }
 header .navbar-dark .navbar-nav .nav-link:hover {
   color: #ff6712;
 }
 
-.dropdown-menu {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  border: none;
-  border-radius: 0;
-  padding: 0.7em;
+@font-face {
+  font-family: "kanit";
+  src: url(/fonts/kanit/Kanit-ExtraLight.ttf);
+  font-style: normal;
 }
-
-@media only screen and (min-width: 992px) {
-  .dropdown:hover .dropdown-menu {
-    display: flex;
+@font-face {
+  font-family: "kanit-light";
+  src: url(/fonts/kanit/Kanit-Light.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "kanit-semiBold";
+  src: url(/fonts/kanit/Kanit-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "khula";
+  src: url(/fonts/khula/Khula-ExtraBold.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "telex";
+  src: url(/fonts/telex/Telex-Regular.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "modern";
+  src: url(/fonts/modern/theModernChaos.ttf);
+}
+@font-face {
+  font-family: "grafitti";
+  src: url(/fonts/grafiti/SterousDemoRegular.ttf);
+}
+#bg-carousel {
+  margin: 20px;
+  z-index: 1;
+  position: relative;
+}
+@media (min-width: 1920px) {
+  #bg-carousel .carousel-item img {
+    width: 100%;
   }
-  .dropdown-menu.show {
-    display: flex;
-  }
 }
-.dropdown-menu ul {
-  list-style: none;
-  padding: 0;
+#bg-carousel .carousel-item .bg-c-item-01 h2 {
+  text-align: center;
+  font-family: "modern";
+  font-size: 80px;
+  color: white;
 }
-
-.dropdown-menu li .dropdown-item {
-  color: gray;
-  font-size: 1em;
-  padding: 0.5em 1em;
+#bg-carousel .carousel-item .bg-c-item-02 h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "kanit-light";
+  font-size: 60px;
+  width: 30%;
 }
-
-.dropdown-menu li .dropdown-item:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown-menu li:first-child a {
-  font-weight: bold;
-  font-size: 1.2em;
-  text-transform: uppercase;
+#bg-carousel .carousel-item .bg-c-item-02 h2 span {
+  text-align: start;
   color: #ff6712;
 }
-
-.dropdown-menu li:first-child a:hover {
-  background-color: #f1f1f1;
+#bg-carousel .carousel-item .bg-c-item-03 h2 {
+  display: inline-block;
+  text-align: center;
+  font-family: "grafitti";
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
 }
-
-@media only screen and (max-width: 992px) {
-  .dropdown-menu.show {
-    flex-wrap: wrap;
-    max-height: 350px;
-    overflow-y: scroll;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1140px) {
-  .dropdown:hover .dropdown-menu {
-    width: 40vw;
-    flex-wrap: wrap;
+@media (max-width: 1345px) {
+  #bg-carousel .carousel-item .carousel-caption h2 {
+    font-size: 50px;
   }
 }
-/*
-//----------------------
-input {
-    font-family: "Kanit", sans-serif;;
+@media (max-width: 855px) {
+  #bg-carousel .carousel-item .carousel-caption h2 {
+    font-size: 35px;
   }
-  .bg-search-bar {
-    display: inline-block;
+}
+@media (max-width: 1555px) {
+  #bg-carousel .carousel-item .bg-c-item-02 h2 {
+    font-size: 40px;
   }
-  .bg-sb {
-    margin: 5px;
-    display: flex;
-    background: #000;
-    border-radius: 100px;
-    border: 1px solid #3b3b3b;
+}
+@media (max-width: 1000px) {
+  #bg-carousel .carousel-item .bg-c-item-02 h2 {
+    font-size: 30px;
   }
-
-  .bg-sb:hover {
-    border-color: #ff6712;
-  }
-
-  .bg-sb input {
-    background: transparent;
-    font-weight: 600;
-    font-size: 15px;
-    border: none;
-    padding: 0;
-    width: 0;
-    outline: none;
-    transition: all 0.45s;
-  }
-
-  .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 35px;
-    height: 35px;
-    margin: 7px;
-    border-radius: 50%;
-    background: white;
-  }
-  .icon i {
-    position: absolute;
-    color: #000000;
-  }
-  //----------------------
-
-
-
-  //----------------------
-  .icon .bi-x-lg {
-    opacity: 0;
-  }
-
-  .icon .bi-bag-fill {
-    opacity: 0;
-  }
-
-  .icon .bi-person-fill {
-    opacity: 0;
-  }
-  //----------------------
-
-
-
-  //----------------------
-  .bg-search-bar:hover input,
-  input:focus,
-  input:not(:placeholder-shown) {
-    width: 250px;
-    padding: 0.5rem;
-    padding-left: 1.5rem;
-  }
-  //----------------------
-
-  //----------------------
-  .bg-search-bar:hover .bi-x-lg,
-  input:focus ~ .icon .bi-x-lg,
-  input:not(:placeholder-shown) ~ .icon .bi-x-lg {
-    opacity: 1;
-    font-size: 15px;
-  }
-
-  .bg-search-bar:hover .bi-bag-fill {
-    opacity: 1;
-    font-size: 15px;
-  }
-
-  .bg-search-bar:hover .bi-person-fill {
-    opacity: 1;
-    font-size: 15px;
-  }
-  //----------------------
-
-
-
-  //----------------------
-  .bg-search-bar:hover .bi-search,
-  input:focus ~ .icon .bi-search,
-  input:not(:placeholder-shown) ~ .icon .bi-search {
-    opacity: 0;
-  }
-  //----------------------*/
-#carousel-b {
-  margin: 20px;
-  z-index: -1;
 }
 
-#card-1,
-#card-2,
-#card-3 {
-  border: 20px solid white;
-  border-radius: 20px;
-  transition: all 0.4s;
-  box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.1294117647);
-  margin-bottom: 100px;
+@font-face {
+  font-family: "kanit";
+  src: url(/fonts/kanit/Kanit-ExtraLight.ttf);
+  font-style: normal;
 }
-
-#card-1 img,
-#card-2 img,
-#card-3 img {
-  border-radius: 20px;
+@font-face {
+  font-family: "kanit-light";
+  src: url(/fonts/kanit/Kanit-Light.ttf);
+  font-style: normal;
 }
-
-#card-1:hover {
-  box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.5607843137);
-  transform: translateY(-3%);
+@font-face {
+  font-family: "kanit-semiBold";
+  src: url(/fonts/kanit/Kanit-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
 }
-
-#card-2:hover {
-  box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.5607843137);
-  transform: translateY(-3%);
+@font-face {
+  font-family: "khula";
+  src: url(/fonts/khula/Khula-ExtraBold.ttf);
+  font-style: normal;
 }
-
-#card-3:hover {
-  box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.5607843137);
-  transform: translateY(-3%);
+@font-face {
+  font-family: "telex";
+  src: url(/fonts/telex/Telex-Regular.ttf);
+  font-style: normal;
 }
-
-.align-i {
-  display: flex;
-  justify-content: center;
+@font-face {
+  font-family: "modern";
+  src: url(/fonts/modern/theModernChaos.ttf);
 }
-
-.footer-h ul li a {
-  color: rgb(0, 0, 0);
+@font-face {
+  font-family: "grafitti";
+  src: url(/fonts/grafiti/SterousDemoRegular.ttf);
 }
-.footer-h ul li a:hover {
-  color: #FF6712;
-}
-
 .bg-nopadding [class*=col-] {
   padding: 0;
   padding-left: 0;
   padding-right: 0;
   position: relative;
+}
+
+@media (min-width: 1920px) {
+  .bg-offers img {
+    width: 100%;
+  }
+}
+.bg-offers a {
+  padding: 2px 20px;
+  border: 2px solid #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.45s;
 }
 
 .ag-margin img {
@@ -261,6 +285,43 @@ input {
   transition: opacity 0.55s;
   background: rgba(0, 0, 0, 0.5254901961);
 }
+.ag-margin .bg-overlay .bg-b-title {
+  font-size: 40px;
+  font-weight: bold;
+}
+.ag-margin .bg-overlay .bg-i-description {
+  text-align: center;
+  width: 1000px;
+  font-family: "telex";
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+.ag-margin .bg-overlay .bg-i-description span {
+  color: #ff6712;
+}
+@media (max-width: 1600px) {
+  .ag-margin .bg-overlay .bg-i-description {
+    width: 500px;
+  }
+}
+@media (max-width: 1000px) {
+  .ag-margin .bg-overlay .bg-b-title {
+    font-size: 30px;
+  }
+  .ag-margin .bg-overlay .bg-i-description {
+    width: 300px;
+    font-size: 1em;
+  }
+}
+@media (max-width: 500px) {
+  .ag-margin .bg-overlay .bg-b-title {
+    font-size: 23px;
+  }
+  .ag-margin .bg-overlay .bg-i-description {
+    width: 300px;
+    font-size: 0.8em;
+  }
+}
 .ag-margin .bg-overlay a {
   padding: 1px 20px;
   border: 2px solid #ffffff;
@@ -284,188 +345,310 @@ input {
   transition: transform 0.55s;
 }
 
-.bg-b-title {
-  font-size: 40px;
-  font-weight: bold;
+@font-face {
+  font-family: "kanit";
+  src: url(/fonts/kanit/Kanit-ExtraLight.ttf);
+  font-style: normal;
 }
-
-.bg-i-description {
-  font-size: 1.25em;
-  margin-top: 0.25em;
+@font-face {
+  font-family: "kanit-light";
+  src: url(/fonts/kanit/Kanit-Light.ttf);
+  font-style: normal;
 }
-
-#item-1 img {
-  height: 150px;
-  width: 150px;
-}
-
-#item-2 img {
-  height: 150px;
-  width: 150px;
-}
-
-.bg-span-m span {
-  display: flex;
-  align-items: flex-end;
-}
-
-#bg-data {
-  box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.75);
-}
-
-.bg-search-bar {
-  display: inline-block;
-}
-
-.bg-search-bar:hover input,
-input:focus,
-input:not(:placeholder-shown) {
-  width: 250px;
-  padding: 0.5rem;
-  padding-left: 1.5rem;
-}
-
-.bg-search-bar:hover .bi-x-lg,
-input:focus ~ .icon .bi-x-lg,
-input:not(:placeholder-shown) ~ .icon .bi-x-lg {
-  opacity: 1;
-  font-size: 15px;
-}
-
-.bg-search-bar:hover .bi-bag-fill {
-  opacity: 1;
-  font-size: 15px;
-}
-
-.bg-search-bar:hover .bi-person-fill {
-  opacity: 1;
-  font-size: 15px;
-}
-
-.bg-search-bar:hover .bi-search,
-input:focus ~ .icon .bi-search,
-input:not(:placeholder-shown) ~ .icon .bi-search {
-  opacity: 0;
-}
-
-.bg-sb {
-  margin: 5px;
-  display: flex;
-  background: #000;
-  border-radius: 100px;
-  border: 1px solid #3b3b3b;
-}
-.bg-sb input {
-  font-family: "Kanit", sans-serif;
-  background: transparent;
+@font-face {
+  font-family: "kanit-semiBold";
+  src: url(/fonts/kanit/Kanit-SemiBold.ttf);
+  font-style: normal;
   font-weight: 600;
-  font-size: 15px;
-  border: none;
-  padding: 0;
-  width: 0;
-  outline: none;
-  transition: all 0.45s;
 }
-.bg-sb .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 35px;
-  height: 35px;
-  margin: 7px;
-  border-radius: 50%;
-  background: white;
+@font-face {
+  font-family: "khula";
+  src: url(/fonts/khula/Khula-ExtraBold.ttf);
+  font-style: normal;
 }
-.bg-sb .icon .bi-x-lg, .bg-sb .icon .bi-person-fill, .bg-sb .icon .bi-bag-fill {
-  opacity: 0;
+@font-face {
+  font-family: "telex";
+  src: url(/fonts/telex/Telex-Regular.ttf);
+  font-style: normal;
 }
-.bg-sb .icon i {
+@font-face {
+  font-family: "modern";
+  src: url(/fonts/modern/theModernChaos.ttf);
+}
+@font-face {
+  font-family: "grafitti";
+  src: url(/fonts/grafiti/SterousDemoRegular.ttf);
+}
+#footer {
+  background-color: black;
+}
+#footer .bg-footer h5 {
+  font-family: "kanit-light";
+  font-size: 25px;
+  color: #ff6712;
+}
+#footer .bg-footer ul li a {
+  font-family: "telex";
+  font-size: 16px;
+  display: inline;
+  color: white;
+  position: relative;
+}
+#footer .bg-footer ul li a:hover {
+  color: #ff6712;
+}
+#footer .bg-footer ul li a::before {
+  content: "";
   position: absolute;
-  color: #000000;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  top: 20px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
 }
-.bg-sb .icon i:hover {
-  border-color: #ff6712;
+#footer .bg-footer ul li a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+#footer .bg-footer ul .bd-a a:hover {
+  color: rgb(255, 80, 80);
+  text-shadow: none;
+}
+#footer .bg-icons-footer .bi {
+  color: white;
+}
+#footer .bg-icons-footer .bi:hover {
+  color: #ff6712;
+}
+#footer .bg-newsletter h6 {
+  font-family: "kanit-light";
+  font-size: 25px;
+  color: white;
+}
+#footer .bg-newsletter p {
+  color: rgb(150, 150, 150);
+}
+#footer .bg-copyright p {
+  font-family: "kanit-light";
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+}
+#footer .bg-copyright p span {
+  color: #ff6712;
+  transition: all 0.6s ease;
+}
+#footer .bg-copyright p span:hover {
+  margin: 0px 25px 0px 25px;
+  transition: all 0.4s 0s ease;
+  text-shadow: 1px 1px 25px white;
 }
 
-#faq {
-  border: 1px solid #c5c5c5;
-  margin-top: 50px;
+/*-----------------------------*/
+/*-------------Base-------------*/
+@font-face {
+  font-family: "kanit";
+  src: url(/fonts/kanit/Kanit-ExtraLight.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "kanit-light";
+  src: url(/fonts/kanit/Kanit-Light.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "kanit-semiBold";
+  src: url(/fonts/kanit/Kanit-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "khula";
+  src: url(/fonts/khula/Khula-ExtraBold.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "telex";
+  src: url(/fonts/telex/Telex-Regular.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "modern";
+  src: url(/fonts/modern/theModernChaos.ttf);
+}
+@font-face {
+  font-family: "grafitti";
+  src: url(/fonts/grafiti/SterousDemoRegular.ttf);
+}
+/*-----------------------------*/
+/*-------------Base-------------*/
+@font-face {
+  font-family: "kanit";
+  src: url(/fonts/kanit/Kanit-ExtraLight.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "kanit-light";
+  src: url(/fonts/kanit/Kanit-Light.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "kanit-semiBold";
+  src: url(/fonts/kanit/Kanit-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "khula";
+  src: url(/fonts/khula/Khula-ExtraBold.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "telex";
+  src: url(/fonts/telex/Telex-Regular.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: "modern";
+  src: url(/fonts/modern/theModernChaos.ttf);
+}
+@font-face {
+  font-family: "grafitti";
+  src: url(/fonts/grafiti/SterousDemoRegular.ttf);
+}
+.align-i {
+  display: flex;
+  justify-content: center;
 }
 
-.bg-c-b {
-  background-color: rgb(240, 240, 240);
-}
-
-.bg-urban {
-  display: inline;
-  transition: all 0.6s;
-}
-.bg-urban:hover {
-  transition: all 0.3s;
-  text-shadow: -2px 0px 5px rgba(0, 81, 255, 0.6);
-}
-
-.bg-nomad {
-  display: inline;
-  transition: all 0.6s;
-}
-.bg-nomad:hover {
-  transition: all 0.3s;
-  text-shadow: -2px 0px 5px rgba(255, 103, 18, 0.6);
-}
-
-.bg-outfit-card {
-  background-color: white;
+.bg-card {
+  display: flex;
+  flex-direction: column;
+  height: 520px;
   border: 20px solid white;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: all 0.4s;
-  box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.1294117647);
-  margin-bottom: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
-.bg-outfit-card img {
-  border-radius: 20px;
-}
-.bg-outfit-card:hover {
-  box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.2549019608);
+.bg-card:hover {
+  box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.3960784314);
   transform: translateY(-3%);
 }
-.bg-outfit-card .card-body a {
+.bg-card .card-body {
+  background-color: white;
+}
+.bg-card .card-body h4 {
+  font-family: "kanit";
+  font-size: 25px;
+}
+.bg-card .card-body span {
+  font-family: "kanit-light";
+  font-size: 17px;
+}
+.bg-card .card-body h5 {
+  font-family: "kanit-semibold";
+  font-size: 20px;
+}
+.bg-card .card-body a {
+  font-family: "kanit";
+  font-size: 18px;
   display: flex;
   justify-content: center;
-  border-radius: 10px;
+}
+
+.bg-button-share ul li a .bg-icon-share i {
+  color: black;
+}
+.bg-button-share ul li a .bg-text-share {
+  color: black;
+}
+
+.bg-color-pick ul {
+  list-style: none;
+}
+
+.main-sample-product {
+  margin-bottom: 120px;
+}
+
+.bg-product-image {
+  background-color: rgb(248, 249, 250);
+  border: solid 45px rgb(248, 249, 250);
+}
+
+.bg-product-info {
+  background-color: rgb(248, 249, 250);
+  border: solid 45px rgb(248, 249, 250);
+}
+.bg-product-info .bg-sku {
+  font-family: "kanit-light";
+  font-size: 15px;
+  color: rgb(126, 126, 126);
+}
+.bg-product-info .bg-prduct-title {
+  font-family: "kanit-light";
+  font-size: 50px;
+  color: #ff6712;
+}
+.bg-product-info .bg-product-price {
+  font-family: "kanit-semibold";
+  font-size: 25px;
+  color: rgb(71, 71, 71);
+}
+.bg-product-info .bg-prduct-caption {
+  width: 90%;
+  font-family: "telex";
+  font-size: 16px;
+  color: rgb(92, 92, 92);
+}
+
+#bg-pag {
+  margin: 80px;
+}
+#bg-pag ul li a {
+  color: black;
+}
+#bg-pag .bg-active a {
   color: #ff6712;
 }
 
-.nomad-banner {
-  border-radius: 20px;
-  max-width: 91.5%;
+@media screen and (max-width: 1500px) {
+  .bg-hidden-responsive {
+    display: none;
+  }
 }
-
+@media screen and (max-width: 1200px) {
+  .bg-hidden-responsive-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 580px) {
+  .bg-hidden-responsive-2 {
+    display: none;
+  }
+}
+/*-----------------------------*/
+/*------------Global------------*/
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  overflow-x: hidden;
-  font-family: "Kanit", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+/*-----------------------------*/
 #notfound img {
   width: 100%;
   height: 100%;
   display: flex;
-}
-
-#bg-pag {
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-#bg-pag ul li a {
-  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
