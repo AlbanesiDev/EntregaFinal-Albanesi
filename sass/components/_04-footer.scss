@@ -50,6 +50,14 @@
             }
         }
     }
+    .bg-icons-footer {
+        .bi {
+            color: white;
+            &:hover {
+                color: $color-enfasisPrincipal;
+            }
+        }
+    }
     .bg-newsletter {
         h6 {
             font-family: 'kanit-light';

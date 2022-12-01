@@ -1,0 +1,94 @@
+@import '../base/colors';
+@import '../base/fonts';
+
+.align-i {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-card {
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    border: 20px solid white;
+    border-radius: 10px;
+    transition: all 0.4s;
+    box-shadow: 0px 0px 10px #00000033;
+    margin-bottom: 20px;
+    &:hover {
+        box-shadow: 1px 11px 21px -1px #00000065;
+        transform: translateY(-3%);
+    }
+    .card-body {
+        h4 {
+            font-family: 'kanit';
+            font-size: 25px;
+        }
+        span {
+            font-family: 'kanit-light';
+            font-size: 17px;
+        }
+        h5 {
+            font-family: 'kanit-semibold';
+            font-size: 20px;
+        }
+        a {
+            font-family: 'kanit';
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.bg-button-share {
+    ul {
+        li {
+            a {
+                .bg-icon-share {
+                    i {
+                        color: black;
+                    }
+                }
+                
+                .bg-text-share {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+
+.bg-color-pick {
+    ul {
+        list-style: none;
+    }
+    .color-item {
+        #bt-p-black {
+            color: black;
+        }
+        #bt-p-white {
+            .bi-circle-fill{
+
+                color: white;
+            }
+        }
+        #bt-p-gray {
+        
+            color: gray;
+        }
+        #bt-p-orange {
+            color: orange;
+    
+        }
+        #bt-p-red {
+            color: red;
+    
+        }
+        #bt-p-blue {
+            color: blue;
+    
+        }
+    }
+}
