@@ -484,7 +484,145 @@ header .navbar-dark .navbar-nav .nav-link:hover {
   src: url(/fonts/grafiti/SterousDemoRegular.ttf);
 }
 /*-----------------------------*/
-/*-------------Base-------------*/
+/*-------------Secondary------------*/
+.bg-c-b {
+  background-color: rgb(240, 240, 240);
+}
+
+.bg-urban {
+  display: inline;
+  transition: all 0.6s;
+}
+.bg-urban:hover {
+  transition: all 0.3s;
+  text-shadow: -2px 0px 5px rgba(0, 81, 255, 0.6);
+}
+
+.bg-nomad {
+  display: inline;
+  transition: all 0.6s;
+}
+.bg-nomad:hover {
+  transition: all 0.3s;
+  text-shadow: -2px 0px 5px rgba(255, 103, 18, 0.6);
+}
+
+.bg-outfit-card {
+  background-color: white;
+  border: 20px solid white;
+  border-radius: 20px;
+  transition: all 0.4s;
+  box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.1294117647);
+  margin-bottom: 30px;
+}
+.bg-outfit-card img {
+  border-radius: 20px;
+}
+.bg-outfit-card:hover {
+  box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.2549019608);
+  transform: translateY(-3%);
+}
+.bg-outfit-card .card-body a {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  color: #ff6712;
+}
+
+.nomad-banner {
+  border-radius: 20px;
+  max-width: 91.5%;
+}
+
+.tilting-card-wrapper {
+  position: relative;
+  aspect-ratio: 3/4.11;
+}
+.tilting-card-wrapper .mouse-position-tracker {
+  position: absolute;
+  width: 33.3333333333%;
+  height: 33.3333333333%;
+  z-index: 1;
+}
+.tilting-card-wrapper .tilting-card-body {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  --perspective: 1500px;
+  --rotationX: 0;
+  --rotationY: 0;
+  --rotationZ: 0;
+  --angle: 5deg;
+  transform: perspective(var(--perspective)) rotateX(var(--rotationX)) rotateY(var(--rotationY)) rotateZ(var(--rotationZ));
+  transition: transform 500ms ease;
+}
+.tilting-card-wrapper .tilting-card-body img {
+  max-width: 91.3%;
+  border-radius: 20px;
+  box-shadow: 1px 11px 21px -1px rgba(0, 0, 0, 0.1294117647);
+}
+
+/* 1st, 4th, 7th */
+.mouse-position-tracker:nth-child(3n-2) {
+  left: 0;
+}
+
+/* 2nd, 5th, 8th */
+.mouse-position-tracker:nth-child(3n-1) {
+  left: 33.3333333333%;
+}
+
+/* 2nd, 5th, 8th */
+.mouse-position-tracker:nth-child(3n) {
+  right: 0;
+}
+
+/* 4 to 6 */
+.mouse-position-tracker:nth-child(n+4):nth-child(-n+6) {
+  top: 33.3333333333%;
+}
+
+/* 7 to 9 */
+.mouse-position-tracker:nth-child(n+7):nth-child(-n+9) {
+  bottom: 0;
+}
+
+.mouse-position-tracker:nth-child(1):hover ~ .tilting-card-body {
+  --rotationX: var(--angle);
+  --rotationY: calc(var(--angle) * -1);
+}
+
+.mouse-position-tracker:nth-child(2):hover ~ .tilting-card-body {
+  --rotationX: var(--angle);
+}
+
+.mouse-position-tracker:nth-child(3):hover ~ .tilting-card-body {
+  --rotationX: var(--angle);
+  --rotationY: var(--angle);
+}
+
+.mouse-position-tracker:nth-child(4):hover ~ .tilting-card-body {
+  --rotationY: calc(var(--angle) * -1);
+}
+
+.mouse-position-tracker:nth-child(6):hover ~ .tilting-card-body {
+  --rotationY: var(--angle);
+}
+
+.mouse-position-tracker:nth-child(7):hover ~ .tilting-card-body {
+  --rotationY: calc(var(--angle) * -1);
+  --rotationX: calc(var(--angle) * -1);
+}
+
+.mouse-position-tracker:nth-child(8):hover ~ .tilting-card-body {
+  --rotationX: calc(var(--angle) * -1);
+}
+
+.mouse-position-tracker:nth-child(9):hover ~ .tilting-card-body {
+  --rotationY: var(--angle);
+  --rotationX: calc(var(--angle) * -1);
+}
+
 @font-face {
   font-family: "kanit";
   src: url(/fonts/kanit/Kanit-ExtraLight.ttf);
@@ -631,6 +769,15 @@ header .navbar-dark .navbar-nav .nav-link:hover {
     display: none;
   }
 }
+#faq h1 {
+  font-family: "kanit-light";
+  font-size: 70px;
+}
+#faq h2 {
+  font-family: "kanit";
+  font-size: 40px;
+}
+
 /*-----------------------------*/
 /*------------Global------------*/
 body {
@@ -645,10 +792,5 @@ html {
 }
 
 /*-----------------------------*/
-#notfound img {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
 
 /*# sourceMappingURL=style.css.map */
